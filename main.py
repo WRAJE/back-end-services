@@ -8,4 +8,4 @@ class MyHttp(Http):
     body = f"<h1>404 Not Found</h1><p>Path={path}</p>"
     self.response(body)
 
-MyHttp(HOST,PORT)
+MyHttp(HOST,PORT).start_server()
